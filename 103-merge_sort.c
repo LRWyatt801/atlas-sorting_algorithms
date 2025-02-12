@@ -54,7 +54,7 @@ static void merge(int *array, int left, int mid, int right)
 	i = 0;
 	j = 0;
 	k = left;
-	while (i < sizel && j < sizer)
+	while (i < sizel && j < sizer && k <= right)
 	{
 		if (L[i] <= R[j])
 		{
