@@ -34,7 +34,8 @@ static void merge(int *array, int left, int mid, int right)
 	int sizel = mid - left + 1;
 	int sizer = right - mid;
 
-	int L[sizel], R[sizer];
+	/* C90 forbids variable length array -- fixed by setting array size to 1024 */
+	int L[1024], R[1024];
 
 	/* copy data to tmp arrays L[] and R[] */
 	for (i = 0; i < sizel; i++)
