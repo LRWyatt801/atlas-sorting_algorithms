@@ -2,11 +2,11 @@
 
 void shell_sort(int *array, size_t size)
 {
-	if (array == NULL || size == 0)
-		return;
-
 	size_t gap = 1;
 	size_t i, j;
+
+	if (array == NULL || size == 0)
+		return;
 
 	while (gap < size)
 		gap = (gap * 3) + 1;
