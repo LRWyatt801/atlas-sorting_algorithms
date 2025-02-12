@@ -87,7 +87,7 @@ static void merge_recursive(int *array, int left, int right)
 {
 	if (left < right)
 	{
-		int mid = left + (right - left) / 2;
+		int mid = left + (right - left - 1) / 2;
 
 		merge_recursive(array, left, mid);
 		merge_recursive(array, mid + 1, right);
